@@ -1,0 +1,9 @@
+<div class="container">
+
+  <p *ngIf="!authService.isLoggedIn()">Lets log in</p>
+  <button type="button" class="btn btn-danger" (click)="authService.logout()">Logout</button>
+  
+  <button type="button" class="btn btn-danger" (click)="authService.resetPassword('sameerat8@gmail.com')">Send reset password email</button>
+  
+
+</div> <!-- /container -->
